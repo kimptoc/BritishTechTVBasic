@@ -1,5 +1,62 @@
-<% content_for :head do %>
-  <title>The Middleman!</title>
-<% end%>
+	    <!-- Dummy anchor as focus for key events -->
+        <a href='javascript:void(0);' id='anchor' onkeydown='Main.keyDown();'></a>
+        <!-- Layout begins -->
+        <div id="main">
+            <div id="logo">Bagel Tech Mac</div>
+            <div id ="rightHalf">
+                <div id="videoBox_top"></div>
+                <div id="videoBox_left"></div>
+                <div id="videoBox_right"></div>
+                <div id="videoBox_bottom">
+                    <div id="time">
+                        <div id="progressBarBG">
+                            <div id="progressBar"></div>
+                        </div>
+                        <div id="timeInfo"></div>
+                    </div>
+                    <div id="volume">
+                        <div id="volumeIcon"></div>
+                        <div id="volumeBarBG">
+                            <div id="volumeBar"></div>
+                        </div>
+                        <div id="volumeInfo"></div>
+                    </div>
+                    <div id="videoControl">
+                        <div id="rewind"></div>
+                        <div id="play"></div>
+                        <div id="stop"></div>
+                        <div id="pause"></div>
+                        <div id="forward"></div>
+                    </div>
+                    <div id="status"></div>
+                </div>
+                <div id="description_top"></div>
+                <div id="description_bottom"></div>
+                <div id="description"></div>
+            </div>
+            <div id="leftHalf">
+                <div id="videoList" class="style_videoList">
+                    <div id="video0"></div>
+                    <div id="video1"></div>
+                    <div id="video2"></div>
+                    <div id="video3"></div>
+                    <div id="video4"></div>
+                    <div id="videoCount"></div>
+                </div>
+                <div id="previous"></div>
+                <div id="next"></div>
+            </div> 
+            <div id="navi">
+                <div id="help_navi">
+                    <img src="images/navi/play.png"></img>
+                    <img src="images/navi/stop.png"></img>
+                    <img src="images/navi/pause.png"></img>
+                    <img src="images/navi/rewind.png"></img>
+                    <img src="images/navi/forward.png"></img>&nbsp<a class="style_navi">Video Control</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <img src="images/navi/enter.png"></img>&nbsp<a class="style_navi">Full-screen/Window mode</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <img src="images/navi/return.png"></img>&nbsp<a class="style_navi">Return</a>
+                </div>
+            </div>
+        </div>     
 
-<h1>The Middleman is watching.</h1>
+   
