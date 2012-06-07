@@ -1,12 +1,12 @@
 <% content_for :head do %>
-    <title>Bagel Tech Mac</title>
+    <title><%= data.config.page_title %></title>
 <% end%>
 
 	    <!-- Dummy anchor as focus for key events -->
         <a href='javascript:void(0);' id='anchor' onkeydown='Main.keyDown();'></a>
         <!-- Layout begins -->
         <div id="main">
-            <div id="logo">Bagel Tech Mac</div>
+            <div id="logo"><%= data.config.page_title %></div>
             <div id ="rightHalf">
                 <div id="videoBox_top"></div>
                 <div id="videoBox_left"></div>
