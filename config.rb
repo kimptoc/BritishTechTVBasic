@@ -68,7 +68,14 @@ set :js_dir, "Javascript"
 # Change the images directory
 # set :images_dir, "alternative_image_directory"
 
-set :build_dir, "../BritishTechTV-Mac"
+#set :data_dir, "data/mac"
+#set :build_dir, "../BritishTechTV-Mac"
+
+site_prefix = ENV["SITE"] || "mac"
+unless site_prefix.nil?
+  set :data_dir, "data/#{site_prefix}"
+  set :build_dir, "../BritishTechTV-#{site_prefix}"
+end
 
 # Build-specific configuration
 configure :build do
