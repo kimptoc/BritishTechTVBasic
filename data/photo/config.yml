@@ -1,4 +1,5 @@
 rss_feed_urlx : http://localhost/scrap/bttv/samples/britishtechmac_rss.xml.php
-rss_feed_url : http://bttv.kimptoc.net/Smart-TV-BTTV-Config/feed.php?name=photo
-page_title : British Tech Photo
-#remote_config_url : http://bttv.kimptoc.net/Smart-TV-BTTV-Config/channels.json.php
+rss_feed_url : http://bttv.kimptoc.net/Smart-TV-BTTV-Config/feed.php?name=photo-video
+page_title : British Tech Network - Photo
+widgetame : BTN-Photo
+description : British Tech News - Photo
