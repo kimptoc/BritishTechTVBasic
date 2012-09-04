@@ -7,3 +7,9 @@ This app is largely the Samsung sample video player Smart TV app with a few twea
 
 TODO
 - see if Samsung approves it...
+
+- show the episode date so its clear how new/old it is
+- track/indicate (via cookies?) what user has watch/not watched
+- episode number X / Y is going to 2 lines on 3.5.2/2012 emulator
+- if no episodes, put up message to that effect (probably not needed)
+- if episode fails to load, put up message saying that
