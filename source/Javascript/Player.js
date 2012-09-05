@@ -183,7 +183,7 @@ Player.onBufferingProgress = function(percent)
 
 Player.onBufferingComplete = function()
 {
-    Display.status("Play");
+    Display.status("Play2");
     switch(this.skipState)
     {
         case this.FORWARD:

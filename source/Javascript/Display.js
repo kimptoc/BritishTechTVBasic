@@ -36,7 +36,7 @@ Display.setTime = function(time)
     var timeElement = document.getElementById("timeInfo");
     var timeHTML = "";
     var timeHour = 0; var timeMinute = 0; var timeSecond = 0;
-    var totalTimeHour = 0; var totalTimeMinute = 0; var totalTimesecond = 0;
+    var totalTimeHour = 0; var totalTimeMinute = 0; var totalTimeSecond = 0;
     
     document.getElementById("progressBar").style.width = timePercent + "%";
     

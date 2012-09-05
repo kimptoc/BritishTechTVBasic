@@ -5,6 +5,9 @@ This app is largely the Samsung sample video player Smart TV app with a few twea
     SITE=photo middleman build
 - see the directories in the data directory for the available sites.
 
+BUGS
+- when testing against local feed app locks up/does not work - perhaps due to local apache not "streaming" the file as expected
+
 TODO
 - see if Samsung approves it...
 
