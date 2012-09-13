@@ -131,7 +131,7 @@ Display.setVideoListPosition = function(position, move)
 {    
     var listHTML = "";
     
-    listHTML = (position + 1) + " / " + Data.getVideoCount();
+    listHTML = (position + 1) + "/" + Data.getVideoCount();
     widgetAPI.putInnerHTML(document.getElementById("videoCount"), listHTML);
     
     if(Data.getVideoCount() < 5)
