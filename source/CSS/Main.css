@@ -90,7 +90,7 @@ body
 {
     position:absolute;
     left:4px; top:8px;
-    width:380px; height:8px;
+    width:370px; height:8px;
     background-image:url("../Images/videoBox/progressBarBG.png");
 }
 
@@ -106,8 +106,8 @@ body
 {
     position:absolute;
     /*left:408px; top:4px;*/
-    left:390px; top:4px;
-    width:60px; height:16px;
+    left:380px; top:4px;
+    width:70px; height:16px;
     
     text-align:center;
     font-size:12px;

@@ -72,16 +72,18 @@ Display.setTime = function(time)
         if(totalTimeMinute == 0)
             timeHTML += "00:";
         else if(totalTimeMinute <10)
-            timeHTML += "0" + totalTimeMinute;
+            timeHTML += "0" + totalTimeMinute + ":";
         else
-            timeHTML += totalTimeMinute;
-            
+            timeHTML += totalTimeMinute +":";
+
         if(totalTimeSecond == 0)
             timeHTML += "00";
         else if(totalTimeSecond <10)
             timeHTML += "0" + totalTimeSecond;
         else
             timeHTML += totalTimeSecond;
+
+        alert(timeHTML);
     }
     else
         timeHTML = "0:00:00/0:00:00";     
