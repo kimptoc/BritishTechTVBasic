@@ -10,7 +10,8 @@ DF-120908-31626-12TV-6Group	- if go full screen then start playing episode, vide
 full screen until episode is playing...
 Also if go full screen, then <return> should go to first page, but app exits.  Doesnt do this on emulator :(
 
-DF-120908-31627-12TV-6Group - screensaver kicks in if no user input after 15 mins.  Try to disable it.
+DF-120908-31627-12TV-6Group - screensaver kicks in if no user input after 15 mins.  Try to disable it.  //added calls, but the plugin gives
+error when re-enabling screensaver, so might not work... " [JS ALERT]:  Common.API.PlugIn >> Plugin is not embeded yet. Check out index.html"
 
 DF-120908-31630-12TV-6Group - error message should be shown when no network connection available.
 
