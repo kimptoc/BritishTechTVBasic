@@ -5,6 +5,16 @@ This app is largely the Samsung sample video player Smart TV app with a few twea
     SITE=photo middleman build
 - see the directories in the data directory for the available sites.
 
+BUGS FROM SAMSUNG REVIEW
+DF-120908-31626-12TV-6Group	- if go full screen then start playing episode, video is not full screen - should be. Or disable option for
+full screen until episode is playing...
+Also if go full screen, then <return> should go to first page, but app exits.  Doesnt do this on emulator :(
+
+DF-120908-31627-12TV-6Group - screensaver kicks in if no user input after 15 mins.  Try to disable it.
+
+DF-120908-31630-12TV-6Group - error message should be shown when no network connection available.
+
+
 BUGS
 - when testing against local feed app locks up/does not work - perhaps due to local apache not "streaming" the file as expected
 
