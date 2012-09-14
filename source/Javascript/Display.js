@@ -83,7 +83,7 @@ Display.setTime = function(time)
         else
             timeHTML += totalTimeSecond;
 
-        alert(timeHTML);
+//        alert(timeHTML);
     }
     else
         timeHTML = "0:00:00/0:00:00";     
