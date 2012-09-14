@@ -14,6 +14,7 @@ DF-120908-31627-12TV-6Group - screensaver kicks in if no user input after 15 min
 
 DF-120908-31630-12TV-6Group - error message should be shown when no network connection available.
 
+Mute - seems to not work, there are calls like this in the code - SetSystemMute , review them
 
 BUGS
 - when testing against local feed app locks up/does not work - perhaps due to local apache not "streaming" the file as expected

@@ -88,8 +88,9 @@ Player.playVideo = function()
         document.getElementById("rewind").style.opacity = '1.0';
         Display.status("Play");
         this.setWindow();
+        Main.pluginAPI.setOffScreenSaver();
         this.plugin.Play( this.url );
-        Audio.plugin.SetSystemMute(false); 
+        Audio.plugin.SetSystemMute(false);   // todo - should we respect existing system mute...
     }
 }
 
@@ -102,6 +103,7 @@ Player.pauseVideo = function()
     document.getElementById("forward").style.opacity = '0.2';
     document.getElementById("rewind").style.opacity = '0.2';
     Display.status("Pause");
+    Main.pluginAPI.setOnScreenSaver();
     this.plugin.Pause();
 }
 
@@ -116,6 +118,7 @@ Player.stopVideo = function()
         document.getElementById("forward").style.opacity = '0.2';
         document.getElementById("rewind").style.opacity = '0.2';
         Display.status("Stop");
+        Main.pluginAPI.setOnScreenSaver();
         this.plugin.Stop();
         Display.setTime(0);
         
@@ -139,6 +142,7 @@ Player.resumeVideo = function()
     document.getElementById("forward").style.opacity = '1.0';
     document.getElementById("rewind").style.opacity = '1.0';
     Display.status("Play");
+    Main.pluginAPI.setOffScreenSaver();
     this.plugin.Resume();
 }
 

@@ -14,13 +14,17 @@ var Main =
     FULLSCREEN : 1,
     
     NMUTE : 0,
-    YMUTE : 1
+    YMUTE : 1,
+
+    pluginAPI : null
 }
 
 Main.onLoad = function()
 {
     if ( Player.init() && Audio.init() && Display.init() && Server.init() )
     {
+        this.pluginAPI = new Common.API.Plugin();
+
         Display.setVolume( Audio.getVolume() );
         Display.setTime(0);
         
