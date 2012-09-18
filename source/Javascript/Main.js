@@ -156,7 +156,15 @@ Main.enableKeys = function()
         case tvKey.KEY_ENTER:
         case tvKey.KEY_PANEL_ENTER:
             alert("ENTER");
-            this.toggleMode();
+            if ( Player.getState() != Player.PLAYING)
+            {
+                if (this.handlePlayKey() == 0)
+                {
+                    this.toggleMode();
+                }
+            } else {
+                this.toggleMode();
+            }
             break;
         
         case tvKey.KEY_MUTE:
@@ -175,15 +183,16 @@ Main.handlePlayKey = function()
     switch ( Player.getState() )
     {
         case Player.STOPPED:
-            Player.playVideo();
+            return Player.playVideo();
             break;
             
         case Player.PAUSED:
-            Player.resumeVideo();
+            return Player.resumeVideo();
             break;
             
         default:
             alert("Ignoring play key, not in correct state");
+            return -1;
             break;
     }
 }

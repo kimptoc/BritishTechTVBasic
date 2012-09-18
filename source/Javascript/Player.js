@@ -79,6 +79,7 @@ Player.playVideo = function()
     if (this.url == null)
     {
         alert("No videos to play");
+        return -1;
     }
     else
     {
@@ -94,6 +95,7 @@ Player.playVideo = function()
         this.plugin.Play( this.url );
         Audio.plugin.SetSystemMute(false);   // todo - should we respect existing system mute...
     }
+    return 0;
 }
 
 Player.pauseVideo = function()
@@ -146,6 +148,7 @@ Player.resumeVideo = function()
     Display.status("Play");
     Main.pluginAPI.setOffScreenSaver();
     this.plugin.Resume();
+    return 0;
 }
 
 Player.skipForwardVideo = function()
