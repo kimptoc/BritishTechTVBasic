@@ -40,8 +40,10 @@ Player.init = function()
     this.plugin.OnStreamInfoReady = 'Player.setTotalTime';
     this.plugin.OnBufferingStart = 'Player.onBufferingStart';
     this.plugin.OnBufferingProgress = 'Player.onBufferingProgress';
-    this.plugin.OnBufferingComplete = 'Player.onBufferingComplete';           
-            
+    this.plugin.OnBufferingComplete = 'Player.onBufferingComplete';
+    this.plugin.OnConnectionFailed = 'Player.OnConnectionFailed';
+    this.plugin.OnNetworkDisconnected = 'Player.OnNetworkDisconnected';
+
     alert("success vale :  " + success);       
     return success;
 }
@@ -210,12 +212,17 @@ Player.setTotalTime = function()
     Display.setTotalTime(Player.plugin.GetDuration());
 }
 
-onServerError = function()
+Player.onServerError = function()
 {
     Display.status("Server Error!");
 }
 
-OnNetworkDisconnected = function()
+Player.OnNetworkDisconnected = function()
+{
+    Display.status("No Internet!");
+}
+
+Player.OnConnectionFailed = function()
 {
     Display.status("No Internet!");
 }

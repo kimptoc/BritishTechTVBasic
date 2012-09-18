@@ -14,9 +14,9 @@ DF-120908-31627-12TV-6Group - screensaver kicks in if no user input after 15 min
 error when re-enabling screensaver, so might not work... " [JS ALERT]:  Common.API.PlugIn >> Plugin is not embeded yet. Check out index.html"
 
 DF-120908-31630-12TV-6Group - error message should be shown when no network connection available.
-- OnNetworkDisconnected // in place for player, test it?
+- OnNetworkDisconnected // in place for player, test it? Doesnt work in emulator and assume doesnt work on TV, given this bug :(
 - getAvailableNetworks // not used, yet
-- CheckHTTP // not used, yet
+- CheckHTTP // called on startup, displays error, yet
 
 
 
