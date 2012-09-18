@@ -187,7 +187,7 @@ Player.onBufferingProgress = function(percent)
 
 Player.onBufferingComplete = function()
 {
-    Display.status("Play2");
+    Display.status("Playing");
     switch(this.skipState)
     {
         case this.FORWARD:
@@ -217,7 +217,7 @@ onServerError = function()
 
 OnNetworkDisconnected = function()
 {
-    Display.status("Network Error!");
+    Display.status("No Internet!");
 }
 
 getBandwidth = function(bandwidth) { alert("getBandwidth " + bandwidth); }

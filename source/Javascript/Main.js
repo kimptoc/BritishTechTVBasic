@@ -16,7 +16,8 @@ var Main =
     NMUTE : 0,
     YMUTE : 1,
 
-    pluginAPI : null
+    pluginAPI : null,
+    pluginNetwork : null
 }
 
 Main.onLoad = function()
@@ -47,7 +48,18 @@ Main.onLoad = function()
         // Enable key event processing
         this.enableKeys();
 
-        widgetAPI.sendReadyEvent();    
+        widgetAPI.sendReadyEvent();
+
+        this.pluginNetwork = document.getElementById("pluginNetwork");
+
+        var checkHTTPWireless = this.pluginNetwork.CheckHTTP(0);
+        alert("check network...wireless:"+checkHTTPWireless);
+        var checkHTTPWired = this.pluginNetwork.CheckHTTP(1);
+        alert("check network...wired:"+checkHTTPWired);
+        if (checkHTTPWired == 0 && checkHTTPWireless == 0)
+        {
+            Display.status("No Internet!");
+        }
     }
     else
     {
